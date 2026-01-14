@@ -11,7 +11,8 @@ R² Score (Coefficient of Determination):
 Indicates how well the model explains the variance in the target variable. Values closer to 1 represent stronger explanatory power.
 
 **2. Model-wise Performance Analysis**
-Linear Regression
+
+*Linear Regression*
 
 MSE: 0.020269
 
@@ -22,7 +23,7 @@ R²: 0.9459
 Interpretation:
 Serves as a strong baseline model but is limited in capturing non-linear relationships, resulting in the weakest overall performance among the models.
 
-Random Forest Regressor
+*Random Forest Regressor*
 
 MSE: 0.018647
 
@@ -33,7 +34,7 @@ R²: 0.9502
 Interpretation:
 Improves upon linear regression by modeling non-linear patterns. However, it underperforms compared to boosting-based and ensemble stacking approaches.
 
-Gradient Boosting Regressor
+*Gradient Boosting Regressor*
 
 MSE: 0.015155 (lowest)
 
@@ -44,7 +45,7 @@ R²: 0.9596 (highest)
 Interpretation:
 This model demonstrates the best overall performance, achieving the lowest error and the highest explanatory power. It effectively balances bias and variance.
 
-Voting Regressor
+*Voting Regressor*
 
 MSE: 0.015919
 
@@ -55,7 +56,7 @@ R²: 0.9575
 Interpretation:
 Provides stable and reliable predictions by aggregating multiple models, but it does not outperform the strongest individual learner.
 
-Stacking Regressor
+*Stacking Regressor*
 
 MSE: 0.015215
 
@@ -65,3 +66,7 @@ R²: 0.9594
 
 Interpretation:
 Performs nearly as well as Gradient Boosting, with slightly better average absolute error, indicating more consistent predictions.
+
+**Overall Model Ranking**
+
+<img width="851" height="314" alt="image" src="https://github.com/user-attachments/assets/ba3a920d-eb40-471c-8e82-4bf86c1e0160" />
